@@ -11,7 +11,7 @@ public class JokeController {
 	@RequestMapping("api/joke")
 	public String hello() {
 
-		final String uri = "http://joketem-node.herokuapp.com/api/joke";
+		final String uri = "https://geek-jokes.sameerkumar.website/api";
 
 	    RestTemplate restTemplate = new RestTemplate();
 	    String result = restTemplate.getForObject(uri, String.class);
